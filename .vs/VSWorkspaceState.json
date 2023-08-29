@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\assets",
+    "\\assets\\fonts",
+    "\\assets\\images"
   ],
-  "SelectedNode": "\\C:\\Users\\FlamehawkPC_nvme\\source\\repos\\Flamehawk7\\portfolio-website-developer",
+  "SelectedNode": "\\assets\\fonts\\fontawesome-webfont.svg",
   "PreviewInSolutionExplorer": false
 }
