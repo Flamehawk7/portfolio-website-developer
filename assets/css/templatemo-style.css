@@ -162,6 +162,7 @@ html {
 
 .menu .social-network ul li {
     margin: 0 3px;
+    padding-top: 5px;
 }
 
 .menu .social-network ul li a {
@@ -172,7 +173,7 @@ html {
     line-height: 40px;
     background-color: rgba(0, 0, 0, 0.2);
     color: #fff;
-    font-size: 14px;
+    font-size: 20px;
     transition: all 0.5s;
 }
 
