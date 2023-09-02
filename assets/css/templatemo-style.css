@@ -423,7 +423,13 @@ button:hover {
     align-items: center;
     align-content: stretch;
     flex-direction: column;
+    padding-top: 1vh;
 }
+
+.close-bottom{
+    min-height: 100vh;
+}
+
 .line{
     width: 100%;
     margin-left: -25%;
