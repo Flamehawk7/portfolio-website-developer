@@ -320,6 +320,14 @@ html {
     letter-spacing: 0.5px;
 }
 
+.section-no-bottom-line{
+    border-bottom: none !important;
+}
+
+.section-lowheight{
+    min-height: 10vh !important;
+    padding-bottom: 10px !important;
+}
 
 /* Buttons */
 
@@ -715,6 +723,7 @@ section.contact-me {
         right: 5%;
         left: 30%;
     }
+
 }
 
 @media screen and (max-width: 1680px) and (min-width: 846px) { 
