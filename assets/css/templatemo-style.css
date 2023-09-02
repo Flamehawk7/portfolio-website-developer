@@ -423,7 +423,7 @@ button:hover {
     align-items: center;
     align-content: stretch;
     flex-direction: column;
-    padding-top: 2vh;
+    padding-top: 2vh !important;
 }
 
 .close-bottom{
