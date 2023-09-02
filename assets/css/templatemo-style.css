@@ -24,6 +24,11 @@ body {
 
 /* Basic */
 
+.list-item{
+    display: list-item;
+    margin-left: 1em;
+}
+
 body {
     overflow-x: hidden;
 }
@@ -406,6 +411,23 @@ button:hover {
 
 
 /* Services */
+
+.line-item{
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: flex !important;
+    justify-content: center;
+    max-width: 100%;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: stretch;
+    flex-direction: column;
+}
+.line{
+    width: 100%;
+    margin-left: -25%;
+}
 
 .my-services .col-md-6 {
     padding-left: 5px;
@@ -843,5 +865,9 @@ section.contact-me {
     }
     .isotope-toolbar {
         margin-bottom: 20px;
+    }
+    .line{
+        width: inherit;
+        margin-left: inherit;
     }
 }
