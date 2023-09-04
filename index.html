@@ -23,10 +23,17 @@
     <link rel="stylesheet" href="assets/css/templatemo-style.css" />
     <link rel="stylesheet" href="assets/css/owl.css" />
     <link rel="stylesheet" href="assets/css/lightbox.css" />
+    
 </head>
 
   <body>
+   
       <div id="page-wraper">
+            <!-- <div class="sticky right"></div>
+            <div id="container" style="z-index: 500; position: relative;">
+                <div id="sticky-anchor"></div>
+                <div class="sticky right"><button class = "button-float-right" onclick="window.location.href='Hangman.html'"> Games </button></div>
+            </div> -->
           <!-- Sidebar Menu -->
           <div class="responsive-nav">
               <i class="fa fa-bars" id="menu-toggle"></i>
@@ -37,8 +44,8 @@
                           <a href="#"><img src="assets/images/author-image.jpg" alt="" /></a>
                       </div>
                       <div class="author-content">
-                          <h4>Nick Bitounis</h4>
-                          <span>Software Engineer - Unity Developer</span>
+                          <h4 style="font-size: 30px;">Nick Bitounis</h4>
+                          <span style="font-size: 20px;">Software Engineer - Unity Developer</span>
                       </div>
                       <nav class="main-nav" role="navigation">
                           <ul class="main-menu">
@@ -48,6 +55,12 @@
                               <li><a href="#section4">Skills</a></li>
                               <li><a href="#section5">Interests</a></li>
                               <li><a href="#section6">Contact Me</a></li>
+                              <li class="subnav">
+                                <a class="subnav-text"> Games <i class="fa fa-caret-down"></i></a>
+                                <div class="subnav-content">
+                                  <a id="sub" href="Hangman.html" onclick="window.location.href('Hangman.html')">Hangman</a>
+                                </div>
+                              </li>
                           </ul>
                       </nav>
                       <div class="social-network">
@@ -96,7 +109,7 @@
                       <div class="row">
                           <div class="col-md-6">
                               <div class="left-image">
-                                  <img src="assets/images/AlmopiasProject.png" alt="" />
+                                  <img src="assets/images/AlmopiasProject.png " style="z-index: 100;" alt="" />
                               </div>
                           </div>
                           <div class="col-md-6">
@@ -127,7 +140,7 @@
                                       They will spread it via pandas.
                                   </p>
                                   <div class="white-button">
-                                      <a href="https://devbros.itch.io/pando20-case">Explore</a>
+                                      <a href="https://devbros.itch.io/pando20-case" style="z-index: 100;">Explore</a>
                                   </div>
                               </div>
                           </div>
@@ -143,7 +156,7 @@
                       <div class="row">
                           <div class="col-md-6">
                               <div class="left-image">
-                                  <img src="assets/images/DiabloArena.png" alt="" />
+                                  <img src="assets/images/DiabloArena.png" style="z-index: 100;" alt="" />
                               </div>
                           </div>
                           <div class="col-md-6">
@@ -171,7 +184,7 @@
                   <div class="section-heading">
                       <h2>Education</h2>
                       <div class="line-dec"></div>
-                      <span>
+                      <span style="font-size: 20px;">
                           Bachelor degree in informatics at Athens University of Economics & Business
                       </span>
                   </div>
@@ -237,75 +250,344 @@
                   </div>
               </div>
           </section>
-
           
-          
-          <section class="section my-services close-bottom" data-section="section3">
+          <section class="section my-services" data-section="section3">
               <div class="container">
                   <div class="section-heading">
                       <h2>Work Experience</h2>
                       <div class="line-dec"></div>
-                      <span>
-                          Bachelor degree in informatics at Athens University of Economics & Business
-                      </span>
                   </div>
                   <div class="">
                       <div class="line-item">
                           <div class="line" style="height: 95%">
                             <section class="section section-lowheight">
                                 <div>
-                                    <h4 class="list-item">Title 1</h4>
-                                    <h4>
-                                        Type 1
-                                    </h4>
-                                    <p>
-                                        Desc 1
-                                    </p>
+                                    <h4 class="job-title">Interworks.cloud</h4>
+                                    <div style="text-align: center;">
+                                        <h6 class="job-time" style="font-size: 15px;">2022/01/10 - NOW</h6>
+                                        <div class="job-time" style="font-size: 15px;">
+                                            <script>
+                                                var numberOfDaysRemaining= -Math.round((new Date("2022-01-10")-new Date())/(24*60*60*1000),0);
+                                                var years = Math.floor(numberOfDaysRemaining / 365);
+                                                var months = Math.floor(numberOfDaysRemaining % 365 / 30);
+                                                var days = Math.floor(numberOfDaysRemaining % 365 % 30);
+                                                var duration = years + "Y  " + months + "M  " + days + "D";
+                                                document.writeln(duration);
+                                            </script>
+                                        </div>
+                                    </div>
+                                    <div class="position-job">
+                                        <h5 style="padding-top: 20px; font-weight: bold;">
+                                            Software Engineer
+                                        </h5>
+                                        <p class="list-item">
+                                            Development with C# .Net
+                                        </p>
+                                    </div>
+                                    &nbsp;
+                                    <h4 style="padding-top: 20px; font-weight:normal;">Projects</h4>
+                                    &nbsp;
+                                    <div class="position-job">
+                                        <h5 style="font-weight: bold;">
+                                            Backend - Refactor
+                                        </h5>
+                                        <h6>
+                                            C#, .Net, Postman, SQL, SSMS, IIS, JSON
+                                        </h6>
+                                    </div>
+                                    <hr color="gray">
+                                    <div class="position-job">
+                                        <h5 style="font-weight: bold;">
+                                            Backend - Api calls
+                                        </h5>
+                                        <p class="list-item">
+                                            New Api calls implementation
+                                        </p>
+                                        <h6>
+                                            C#, .Net, Postman, SQL, SSMS, IIS, JSON
+                                        </h6>
+                                    </div>
+                                    <hr color="gray">
+                                    <div class="position-job">
+                                        <h5 style="font-weight: bold;">
+                                            Frontend
+                                        </h5>
+                                        <p class="list-item">
+                                            New pages, backend connection for DB management to help testers.
+                                        </p>
+                                        <h6>
+                                            C#, aspx, SQL, SSMS, IIS, JSON
+                                        </h6>
+                                    </div>
                                 </div>
                               </section>
                           </div>
                       </div>
                       <div class="line-item">
                           <div class="line" style="height: 95%">
-                            <section class="section section-lowheight">
+                            <section class="section section-lowheight ">
+                                &nbsp;
                                 <div>
-                                    <h4 class="list-item">Title 2</h4>
-                                    <h4>
-                                        Type 2
-                                    </h4>
-                                    <p>
-                                        Desc 2
-                                    </p>
+                                    <h4 class="job-title">DevBros Indie Games Studio</h4>
+                                    <div style="text-align: center;">
+                                        <h6 class="job-time" style="font-size: 15px;">2020/05/01 - NOW</h6>
+                                        <div class="job-time" style="font-size: 15px;">
+                                            <script>
+                                                var numberOfDaysRemaining= -Math.round((new Date("2020-05-01")-new Date())/(24*60*60*1000),0);
+                                                var years = Math.floor(numberOfDaysRemaining / 365);
+                                                var months = Math.floor(numberOfDaysRemaining % 365 / 30);
+                                                var days = Math.floor(numberOfDaysRemaining % 365 % 30);
+                                                var duration = years + "Y  " + months + "M  " + days + "D";
+                                                document.writeln(duration);
+                                            </script>
+                                        </div>
+                                    </div>
+                                    <div class="position-job">
+                                        <h5 style="padding-top: 20px; font-weight: bold;">
+                                            Unity Developer
+                                        </h5>
+                                        <p class="list-item">
+                                            Design, develop, and publish PC games on itch.io
+                                        </p>
+                                    </div>
+                                    &nbsp;
+                                    <h4 class="" style="padding-top: 20px; font-weight:normal;">Projects</h4>
+                                    <div class="position-job" style="padding-top: 20px;">
+                                        <h6 class="project-time" style="font-size: 15px;">
+                                            2020/07/01
+                                        </h6>
+                                        <h5 style="font-weight: bold;">
+                                            Almopia’s project
+                                        </h5>
+                                        <p class="list-item">
+                                            Creation of an adventure game for computer using Unity3D
+                                        </p>
+                                        <h6>
+                                            C#, Blender3D, Unity3D
+                                        </h6>
+                                    </div>
+                                    <hr color="gray">
+                                    <div class="position-job" style="padding-top: 20px;">
+                                        <h6 class="project-time" style="font-size: 15px;">
+                                            2020/06/01
+                                        </h6>
+                                        <h5 style="font-weight: bold;">
+                                            Pando-20 Case
+                                        </h5>
+                                        <p class="list-item">
+                                            Participation in an online GameJam in Greece and a game creation with Unity3D
+                                        </p>
+                                        <h6>
+                                            C#, Blender3D, Unity3D
+                                        </h6>
+                                    </div>
                                 </div>
                               </section>
                           </div>
                       </div>
-                      <div class="line-item">
+                      <div class="col-md-6 line-item">
                           <div class="line" style="height: 95%">
-                            <section class="section section-lowheight">
-                                <div>
-                                    <h4 class="list-item">Title 3</h4>
-                                    <h4>
-                                        Type 3
-                                    </h4>
-                                    <p>
-                                        Desc 3
-                                    </p>
-                                </div>
-                              </section>
-                          </div>
-                      </div>
-                      <div class="line-item">
-                          <div class="line" style="height:95%">
                             <section class="section section-lowheight section-no-bottom-line">
-                                <div>
-                                    <h4 class="list-item">Title 4</h4>
-                                    <h4>
-                                        Type 4
-                                    </h4>
-                                    <p>
-                                        Desc 4
-                                    </p>
+                                &nbsp;
+                                <div>                                   
+                                    <h4 class="job-title">Ninja Fusion Games Studio</h4>
+                                    <div style="text-align: center;">
+                                        <h6 class="job-time" style="font-size: 15px;">2016/12/01 - 2019/08/01</h6>
+                                        <div class="job-time" style="font-size: 15px;">
+                                            <script>
+                                                var numberOfDaysRemaining= -Math.round((new Date("2016-12-01")-new Date("2019-08-01"))/(24*60*60*1000),0);
+                                                var years = Math.floor(numberOfDaysRemaining / 365);
+                                                var months = Math.floor(numberOfDaysRemaining % 365 / 30);
+                                                var days = Math.floor(numberOfDaysRemaining % 365 % 30);
+                                                var duration = years + "Y  " + months + "M  " + days + "D";
+                                                document.writeln(duration);
+                                            </script>
+                                        </div>
+                                    </div>
+                                    <div class="position-job">
+                                        <h5 style="padding-top: 20px; font-weight: bold;">
+                                            Unity Developer
+                                        </h5>
+                                        <p class="list-item">
+                                            Design, develop, and publish Android games on Google Playstore
+                                        </p>
+                                    </div>
+                                    &nbsp;
+                                    <h4 class="" style="padding-top: 20px; font-weight:normal;">Projects</h4>
+                                    &nbsp;
+                                    <div class="position-job" style="padding-top: 20px;">
+                                        <h6 class="project-time" style="font-size: 15px;">
+                                            2019/03/01
+                                        </h6>
+                                        <h5 style="font-weight: bold;">
+                                            Global Game Jam 2019
+                                        </h5>
+                                        <p class="list-item">
+                                            Development of two mobile games and presentation
+                                        </p>
+                                        <h6>
+                                            C#, Blender3D, Unity3D
+                                        </h6>
+                                    </div>
+                                    <hr color="gray">
+                                    <div class="position-job" style="padding-top: 20px;">
+                                        <h6 class="project-time" style="font-size: 15px;">
+                                            2018/12/01
+                                        </h6>
+                                        <h5 style="font-weight: bold;">
+                                            Trip-app
+                                        </h5>
+                                        <p class="list-item">
+                                            Participation in Acein’s Innovation 2018 with tourist application and gamification
+                                        </p>
+                                    </div>
+                                    <hr color="gray">
+                                    <div class="position-job" style="padding-top: 20px;">
+                                        <h6 class="project-time" style="font-size: 15px;">
+                                            2018/11/01
+                                        </h6>
+                                        <h5 style="font-weight: bold;">
+                                            Game Dev training (Voluntary)
+                                        </h5>
+                                        <p class="list-item">
+                                            Game Dev training for high school students in Blender3D and Unity3D
+                                        </p>
+                                        <h6>
+                                            C#, Blender3D, Unity3D
+                                        </h6>
+                                    </div>
+                                    <hr color="gray">
+                                    <div class="position-job" style="padding-top: 20px;">
+                                        <h6 class="project-time" style="font-size: 15px;">
+                                            2018/10/01
+                                        </h6>
+                                        <h5 style="font-weight: bold;">
+                                            Magic Cocktails Presentation
+                                        </h5>
+                                        <p class="list-item">
+                                            Participation in the Athens Games Festival - Presentation of the “Magic Cocktails
+                                        </p>
+                                    </div>
+                                    <hr color="gray">
+                                    <div class="position-job" style="padding-top: 20px;">
+                                        <h6 class="project-time" style="font-size: 15px;">
+                                            2018/10/01
+                                        </h6>
+                                        <h5 style="font-weight: bold;">
+                                            Magic Cocktails
+                                        </h5>
+                                        <p class="list-item">
+                                            Development of the “Magic Cocktails” mobile game (Play Store)
+                                        </p>
+                                        <h6>
+                                            C#, Blender3D, Unity3D
+                                        </h6>
+                                    </div>
+                                    <hr color="gray">
+                                    <div class="position-job" style="padding-top: 20px;">
+                                        <h6 class="project-time" style="font-size: 15px;">
+                                            2018/07/01
+                                        </h6>
+                                        <h5 style="font-weight: bold;">
+                                            Gamelamp Project (Voluntary)
+                                        </h5>
+                                        <p class="list-item">
+                                            Ninja Fusion Initiative four weeks of training in Unity3D
+                                        </p>
+                                        <h6>
+                                            C#, Blender3D, Unity3D
+                                        </h6>
+                                    </div>
+                                    <hr color="gray">
+                                    <div class="position-job" style="padding-top: 20px;">
+                                        <h6 class="project-time" style="font-size: 15px;">
+                                            2018/05/01
+                                        </h6>
+                                        <h5 style="font-weight: bold;">
+                                            Game creation presentation at AUEB
+                                        </h5>
+                                        <p class="list-item">
+                                            Speeches and presentations at the University on game development and a live development of a mobile game with Unity3D
+                                        </p>
+                                        <h6>
+                                            C#, Blender3D, Unity3D
+                                        </h6>
+                                    </div>
+                                    <hr color="gray">
+                                    <div class="position-job" style="padding-top: 20px;">
+                                        <h6 class="project-time" style="font-size: 15px;">
+                                            2018/04/01
+                                        </h6>
+                                        <h5 style="font-weight: bold;">
+                                            Walk in the village
+                                        </h5>
+                                        <p class="list-item">
+                                            Bridge Game Jam – Development of a mobile game for dementia
+                                        </p>
+                                        <h6>
+                                            C#, Blender3D, Unity3D
+                                        </h6>
+                                    </div>
+                                    <hr color="gray">
+                                    <div class="position-job" style="padding-top: 20px;">
+                                        <h6 class="project-time" style="font-size: 15px;">
+                                            2018/02/01
+                                        </h6>
+                                        <h5 style="font-weight: bold;">
+                                            Cool Mayor - Android Game
+                                        </h5>
+                                        <p class="list-item">
+                                            Art Games Game Jam – Development of a political simulation mobile game “Cool Mayor” (Play Store)
+                                        </p>
+                                        <h6>
+                                            C#, Blender3D, Unity3D
+                                        </h6>
+                                    </div>
+                                    <hr color="gray">
+                                    <div class="position-job" style="padding-top: 20px;">
+                                        <h6 class="project-time" style="font-size: 15px;">
+                                            2018/01/01
+                                        </h6>
+                                        <h5 style="font-weight: bold;">
+                                            Dare Ninja - Android Game
+                                        </h5>
+                                        <p class="list-item">
+                                            Development of a 2.5D puzzle mobile game “Dare Ninja” (Play Store)
+                                        </p>
+                                        <h6>
+                                            C#, Blender3D, Unity3D
+                                        </h6>
+                                    </div>
+                                    <hr color="gray">
+                                    <div class="position-job" style="padding-top: 20px;">
+                                        <h6 class="project-time" style="font-size: 15px;">
+                                            2017/05/30
+                                        </h6>
+                                        <h5 style="font-weight: bold;">
+                                            Microsoft Imagine Cup
+                                        </h5>
+                                        <p class="list-item">
+                                            Participation in group finals with two educational games (Android & PC)
+                                        </p>
+                                        <h6>
+                                            C#, Blender3D, Unity3D
+                                        </h6>
+                                    </div>
+                                    <hr color="gray">
+                                    <div class="position-job" style="padding-top: 20px;">
+                                        <h6 class="project-time" style="font-size: 15px;">
+                                            2016/12/01
+                                        </h6>
+                                        <h5 style="font-weight: bold;">
+                                            Hackathon Smartcities
+                                        </h5>
+                                        <p class="list-item">
+                                            Presentation of a Web application with gamification & “establishment” of the Ninja Fusion
+                                        </p>
+                                        <h6>
+                                            HTML, Javascript, CSS, PHP
+                                        </h6>
+                                    </div>
                                 </div>
                               </section>
                           </div>
@@ -314,73 +596,53 @@
               </div>
           </section>
 
-          <!--<section class="section my-services" data-section="section4">
+          <section class="section my-services" data-section="section4">
               <div class="container">
                   <div class="section-heading">
                       <h2>Core Skills</h2>
                       <div class="line-dec"></div>
-                      <span>
-                          
-                      </span>
                   </div>
-                  <div class="row">
-                      <div class="col-md-6">
-                          <div class="service-item" style="height: 95%">
-                              <div class="cpp-icon service-icon"></div>
-                              <h4>Computer programming with C++</h4>
-                              <h4>
-                                  Project Name: Beat Corona
-                              </h4>
-                              <p>
-                                  Computer game created using professor’s game engine
-                                  in C++ (<a href="https://www.youtube.com/watch?v=wzr07HSXRNk" target="_blank">Among the 10 best games of the semester</a>)
-                              </p>
-                              <div class="white-button" style="display:flex; height:130px; justify-content:center; align-items:center;">
-                                  <a href="https://devbros.itch.io/beat-corona">See more</a>
-                              </div>
+                  <div class="row" style="text-align: center;">
+                      <div class="col-md-3">
+                          <div class="service-item skills">
+                              <div title="C++" class="cpp-icon service-icon"></div>
                           </div>
                       </div>
-                      <div class="col-md-6">
-                          <div class="service-item" style="height: 95%">
-                              <div class="unity-icon service-icon"></div>
-                              <h4>Multimedia Technology</h4>
-                              <h4>
-                                  Project Name: Diablo Arena
-                              </h4>
-                              <p>
-                                  Computer game creation using Unity3D C# & Blender3D (3D modeling)
-                              </p>
-                              <div class="white-button" style="display:flex; height:130px; justify-content:center; align-items:center;">
-                                  <a href="https://devbros.itch.io/diablo-arena-v-aueb">See more</a>
-                              </div>
+                      <div class="col-md-3">
+                          <div class="service-item skills">
+                              <div title="C#"  class="csharp-icon service-icon"></div>
                           </div>
                       </div>
-                      <div class="col-md-6">
-                          <div class="service-item" style="height: 95%">
-                              <div class="sql-icon service-icon"></div>
-                              <h4>Databases</h4>
-                              <h4>
-                                  Project Name: IRT Theory
-                              </h4>
-                              <p>
-                                  Development of application for IRT Theory with WPF (Windows presentation foundation)
-                              </p>
+                      <div class="col-md-3">
+                          <div class="service-item skills">
+                              <div title="C"  class="c-icon service-icon"></div>
                           </div>
                       </div>
-                      <div class="col-md-6">
-                          <div class="service-item" style="height:95%">
-                              <div class="business-innovation-icon service-icon"></div>
-                              <h4>Technological innovation & enterpreneurship</h4>
-                              <h4>
-                                  Business Innovation - Drone Simulation Project
-                              </h4>
-                              <p>
-                                  Drone (Aeolus), house guardian project with economic
-                                  plan analysis and possibilities of success in the market,
-                                  research for development and simulation presentation.
-                              </p>
+                      <div class="col-md-3">
+                          <div class="service-item skills">
+                              <div title="JAVA"  class="java-icon service-icon"></div>
                           </div>
                       </div>
+                      <div class="col-md-3">
+                        <div class="service-item skills">
+                            <div title="SQL"  class="sql-icon service-icon"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="service-item skills">
+                            <div title="HTML"  class="html-icon service-icon"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="service-item skills">
+                            <div title="JAVASCRIPT"  class="js-icon service-icon"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="service-item skills">
+                            <div title="CSS"  class="css-icon service-icon"></div>
+                        </div>
+                    </div>
                   </div>
               </div>
           
@@ -388,284 +650,69 @@
                   <div class="section-heading">
                       <h2>Soft Skills</h2>
                       <div class="line-dec"></div>
-                      <span>
-                          
-                      </span>
                   </div>
-                  <div class="row">
-                      <div class="col-md-6">
+                  <div>
+                      <div>
                           <div class="service-item" style="height: 95%">
-                              <div class="cpp-icon service-icon"></div>
-                              <h4>Computer programming with C++</h4>
-                              <h4>
-                                  Project Name: Beat Corona
-                              </h4>
-                              <p>
-                                  Computer game created using professor’s game engine
-                                  in C++ (<a href="https://www.youtube.com/watch?v=wzr07HSXRNk" target="_blank">Among the 10 best games of the semester</a>)
-                              </p>
-                              <div class="white-button" style="display:flex; height:130px; justify-content:center; align-items:center;">
-                                  <a href="https://devbros.itch.io/beat-corona">See more</a>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="col-md-6">
-                          <div class="service-item" style="height: 95%">
-                              <div class="unity-icon service-icon"></div>
-                              <h4>Multimedia Technology</h4>
-                              <h4>
-                                  Project Name: Diablo Arena
-                              </h4>
-                              <p>
-                                  Computer game creation using Unity3D C# & Blender3D (3D modeling)
-                              </p>
-                              <div class="white-button" style="display:flex; height:130px; justify-content:center; align-items:center;">
-                                  <a href="https://devbros.itch.io/diablo-arena-v-aueb">See more</a>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="col-md-6">
-                          <div class="service-item" style="height: 95%">
-                              <div class="sql-icon service-icon"></div>
-                              <h4>Databases</h4>
-                              <h4>
-                                  Project Name: IRT Theory
-                              </h4>
-                              <p>
-                                  Development of application for IRT Theory with WPF (Windows presentation foundation)
-                              </p>
-                          </div>
-                      </div>
-                      <div class="col-md-6">
-                          <div class="service-item" style="height:95%">
-                              <div class="business-innovation-icon service-icon"></div>
-                              <h4>Technological innovation & enterpreneurship</h4>
-                              <h4>
-                                  Business Innovation - Drone Simulation Project
-                              </h4>
-                              <p>
-                                  Drone (Aeolus), house guardian project with economic
-                                  plan analysis and possibilities of success in the market,
-                                  research for development and simulation presentation.
-                              </p>
+                                <p>
+                                    <span class="list-item">
+                                        Communicative
+                                    </span>  
+                                    <span class="list-item">
+                                        Problem solving capable
+                                    </span>
+                                    <span class="list-item">
+                                        Critical thinker
+                                    </span>
+                                    <span class="list-item">
+                                        Flexible
+                                    </span>
+                                    <span class="list-item">
+                                        Adaptable
+                                    </span>
+                                    <span class="list-item">
+                                        Self confident
+                                    </span>
+                                    <span class="list-item">
+                                        Passionate
+                                    </span>
+                                    <span class="list-item">
+                                        Will to learn and self improve
+                                    </span>
+                                </p>
                           </div>
                       </div>
                   </div>
               </div>
           </section>
-
+        
           <section class="section my-services" data-section="section5">
               <div class="container">
                   <div class="section-heading">
                       <h2>Interests</h2>
                       <div class="line-dec"></div>
-                      <span>
-                          Bachelor degree in informatics at Athens University of Economics & Business
-                      </span>
                   </div>
-                  <div class="row">
-                      <div class="col-md-6">
-                          <div class="service-item" style="height: 95%">
-                              <div class="cpp-icon service-icon"></div>
-                              <h4>Computer programming with C++</h4>
-                              <h4>
-                                  Project Name: Beat Corona
-                              </h4>
-                              <p>
-                                  Computer game created using professor’s game engine
-                                  in C++ (<a href="https://www.youtube.com/watch?v=wzr07HSXRNk" target="_blank">Among the 10 best games of the semester</a>)
-                              </p>
-                              <div class="white-button" style="display:flex; height:130px; justify-content:center; align-items:center;">
-                                  <a href="https://devbros.itch.io/beat-corona">See more</a>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="col-md-6">
-                          <div class="service-item" style="height: 95%">
-                              <div class="unity-icon service-icon"></div>
-                              <h4>Multimedia Technology</h4>
-                              <h4>
-                                  Project Name: Diablo Arena
-                              </h4>
-                              <p>
-                                  Computer game creation using Unity3D C# & Blender3D (3D modeling)
-                              </p>
-                              <div class="white-button" style="display:flex; height:130px; justify-content:center; align-items:center;">
-                                  <a href="https://devbros.itch.io/diablo-arena-v-aueb">See more</a>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="col-md-6">
-                          <div class="service-item" style="height: 95%">
-                              <div class="sql-icon service-icon"></div>
-                              <h4>Databases</h4>
-                              <h4>
-                                  Project Name: IRT Theory
-                              </h4>
-                              <p>
-                                  Development of application for IRT Theory with WPF (Windows presentation foundation)
-                              </p>
-                          </div>
-                      </div>
-                      <div class="col-md-6">
-                          <div class="service-item" style="height:95%">
-                              <div class="business-innovation-icon service-icon"></div>
-                              <h4>Technological innovation & enterpreneurship</h4>
-                              <h4>
-                                  Business Innovation - Drone Simulation Project
-                              </h4>
-                              <p>
-                                  Drone (Aeolus), house guardian project with economic
-                                  plan analysis and possibilities of success in the market,
-                                  research for development and simulation presentation.
-                              </p>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </section>-->
-
-          <!--<section class="section my-work" data-section="section4">
-        <div class="container">
-            <div class="section-heading">
-                <h2>Work Experience</h2>
-                <div class="line-dec"></div>
-                <span>
-                    Aenean sollicitudin ex mauris, lobortis lobortis diam euismod sit
-                    amet. Duis ac elit vulputate, lobortis arcu quis, vehicula
-                    mauris.
-                </span>
-            </div>
-            <div class="row">
-                <div class="isotope-wrapper">
-                    <form class="isotope-toolbar">
-                        <label>
-                            <input type="radio"
-                                   data-type="*"
-                                   checked=""
-                                   name="isotope-filter" />
-                            <span>all</span>
-                        </label>
-                        <label>
-                            <input type="radio"
-                                   data-type="people"
-                                   name="isotope-filter" />
-                            <span>people</span>
-                        </label>
-                        <label>
-                            <input type="radio"
-                                   data-type="nature"
-                                   name="isotope-filter" />
-                            <span>nature</span>
-                        </label>
-                        <label>
-                            <input type="radio"
-                                   data-type="animals"
-                                   name="isotope-filter" />
-                            <span>animals</span>
-                        </label>
-                    </form>
-                    <div class="isotope-box">
-                        <div class="isotope-item" data-type="nature">
-                            <figure class="snip1321">
-                                <img src="assets/images/portfolio-01.jpg"
-                                     alt="sq-sample26" />
-                                <figcaption>
-                                    <a href="assets/images/portfolio-01.jpg"
-                                       data-lightbox="image-1"
-                                       data-title="Caption">
-                                        <i class="fa fa-search"></i>
-                                    </a>
-                                    <h4>First Title</h4>
-                                    <span>free to use our template</span>
-                                </figcaption>
-                            </figure>
-                        </div>
-
-                        <div class="isotope-item" data-type="people">
-                            <figure class="snip1321">
-                                <img src="assets/images/portfolio-02.jpg"
-                                     alt="sq-sample26" />
-                                <figcaption>
-                                    <a href="assets/images/portfolio-02.jpg"
-                                       data-lightbox="image-1"
-                                       data-title="Caption">
-                                        <i class="fa fa-search"></i>
-                                    </a>
-                                    <h4>Second Title</h4>
-                                    <span>please tell your friends</span>
-                                </figcaption>
-                            </figure>
-                        </div>
-
-                        <div class="isotope-item" data-type="animals">
-                            <figure class="snip1321">
-                                <img src="assets/images/portfolio-03.jpg"
-                                     alt="sq-sample26" />
-                                <figcaption>
-                                    <a href="assets/images/portfolio-03.jpg"
-                                       data-lightbox="image-1"
-                                       data-title="Caption">
-                                        <i class="fa fa-search"></i>
-                                    </a>
-                                    <h4>Item Third</h4>
-                                    <span>customize anything</span>
-                                </figcaption>
-                            </figure>
-                        </div>
-
-                        <div class="isotope-item" data-type="people">
-                            <figure class="snip1321">
-                                <img src="assets/images/portfolio-04.jpg"
-                                     alt="sq-sample26" />
-                                <figcaption>
-                                    <a href="assets/images/portfolio-04.jpg"
-                                       data-lightbox="image-1"
-                                       data-title="Caption">
-                                        <i class="fa fa-search"></i>
-                                    </a>
-                                    <h4>Item Fourth</h4>
-                                    <span>Re-distribution not allowed</span>
-                                </figcaption>
-                            </figure>
-                        </div>
-
-                        <div class="isotope-item" data-type="nature">
-                            <figure class="snip1321">
-                                <img src="assets/images/portfolio-05.jpg"
-                                     alt="sq-sample26" />
-                                <figcaption>
-                                    <a href="assets/images/portfolio-05.jpg"
-                                       data-lightbox="image-1"
-                                       data-title="Caption">
-                                        <i class="fa fa-search"></i>
-                                    </a>
-                                    <h4>Fifth Awesome</h4>
-                                    <span>Ut sollicitudin risus</span>
-                                </figcaption>
-                            </figure>
-                        </div>
-
-                        <div class="isotope-item" data-type="animals">
-                            <figure class="snip1321">
-                                <img src="assets/images/portfolio-06.jpg"
-                                     alt="sq-sample26" />
-                                <figcaption>
-                                    <a href="assets/images/portfolio-06.jpg"
-                                       data-lightbox="image-1"
-                                       data-title="Caption">
-                                        <i class="fa fa-search"></i>
-                                    </a>
-                                    <h4>Awesome Sixth</h4>
-                                    <span>Donec eget massa ante</span>
-                                </figcaption>
-                            </figure>
-                        </div>
+                    <div class="service-item" style="height: 95%">
+                        <p>
+                            <span class="list-item">
+                                Game Development
+                            </span>  
+                            <span class="list-item">
+                                Reading fantasy novels
+                            </span>
+                            <span class="list-item">
+                                Blender 3D creations
+                            </span>
+                            <span class="list-item">
+                                Hardware engineering
+                            </span>
+                            <span class="list-item">
+                                Taking and completing courses to expand knowledge
+                            </span>
+                        </p>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>-->
+              </div>
+          </section>
 
           <section class="section contact-me" data-section="section6">
               <div class="container">
@@ -801,13 +848,44 @@
       };
 
       $(".main-menu").on("click", "a", function(e) {
-        e.preventDefault();
-        showSection($(this).attr("href"), true);
+        if($(this).attr('id') != "sub"){
+            e.preventDefault();
+            showSection($(this).attr("href"), true);
+        }
       });
 
       $(window).scroll(function() {
         checkSection();
       });
+
+    function sticky_relocate_left() {
+        var window_top = $(window).scrollTop();
+        var div_top = $('#sticky-anchor').offset().top;
+        if (window_top > div_top) {
+            $('.left').addClass('mobile-sticky');
+        } else {
+            $('.left').removeClass('mobile-sticky');
+        }
+    }
+
+    function sticky_relocate_right() {
+        var window_top2 = $(window).scrollTop();
+        var div_top2 = $('#sticky-anchor').offset().top;
+        if (window_top2 > div_top2) {
+            $('.right').addClass('mobile-sticky');
+        } else {
+            $('.right').removeClass('mobile-sticky');
+        }
+    }
+
+    $(function () {
+    //$(window).addEventListener("touchmove", sticky_relocate_right, false);
+    setTimeout($(window).scroll(sticky_relocate_left),0);
+    $(window).scroll(sticky_relocate_right);
+    sticky_relocate_left();
+    sticky_relocate_right();
+    });
+    //end sticky button
     </script>
   </body>
 </html>
