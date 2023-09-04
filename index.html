@@ -848,7 +848,7 @@
       };
 
       $(".main-menu").on("click", "a", function(e) {
-        if($(this).attr('id') != "sub"){
+        if($(this).attr('id') != "sub" && $(this).attr('class') != "subnav-text"){
             e.preventDefault();
             showSection($(this).attr("href"), true);
         }
