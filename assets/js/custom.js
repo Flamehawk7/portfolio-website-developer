@@ -19,7 +19,9 @@
   $(window).on("resize", function() {
     if ($(window).width() < 846) {
       $(".main-menu a").on("click", function() {
-        menu.classList.remove("open");
+        if($(this).attr('id') != "sub-text"){
+          menu.classList.remove("open");
+        }
       });
     }
   });
