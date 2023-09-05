@@ -26,7 +26,7 @@
     
 </head>
 
-  <body>
+  <body onload="leftRightImageSwapInit()">
    
       <div id="page-wraper">
             <!-- <div class="sticky right"></div>
@@ -58,7 +58,8 @@
                               <li class="subnav">
                                 <a class="subnav-text" id="sub-text"> Games <i class="fa fa-caret-down"></i></a>
                                 <div class="subnav-content">
-                                  <a id="sub" href="Hangman.html" onclick="window.location.href('Hangman.html')">Hangman</a>
+                                  <a id="sub" href="Hangman.html">Hangman</a> <!-- onclick="window.location.href('Hangman.html')" -->
+                                  <a id="sub" href="Match3.html">Match3</a>
                                 </div>
                               </li>
                           </ul>
@@ -128,7 +129,12 @@
                   </div>
                   <div class="right-image-post">
                       <div class="row">
-                          <div class="col-md-6">
+                        <div class="col-md-6" id="left-image-pando" style="display: none;">
+                            <div class="right-image">
+                                <img src="assets/images/Pando20Case.png" style="z-index: 100;" alt="" />
+                            </div>
+                        </div>
+                          <div class="col-md-6" style="margin-top: 30px;">
                               <div class="left-text">
                                   <h4>Pando-20 Case</h4>
                                   <p>
@@ -143,12 +149,32 @@
                                       <a href="https://devbros.itch.io/pando20-case" style="z-index: 100;">Explore</a>
                                   </div>
                               </div>
+                              <script>
+                                function leftRightImageSwap(x) {
+                                    if (x.matches) { // If media query matches
+                                        document.getElementById("right-image-pando").style.display = null;
+                                        document.getElementById("left-image-pando").style.display = "none";
+                                    } 
+                                    else {
+                                        document.getElementById("right-image-pando").style.display = "none";
+                                        document.getElementById("left-image-pando").style.display = null
+                                    }
+                                    }
+                                    var x = window.matchMedia("(min-width: 768px)")
+                                    
+                                    x.addListener(leftRightImageSwap)
+
+                                    function leftRightImageSwapInit(){
+                                        leftRightImageSwap(x);
+                                    }
+                              </script>
+                              
                           </div>
-                          <div class="col-md-6">
-                              <div class="right-image">
-                                  <img src="assets/images/Pando20Case.png" alt="" />
-                              </div>
-                          </div>
+                          <div class="col-md-6" id="right-image-pando" style="display: none;">
+                            <div class="right-image">
+                                <img src="assets/images/Pando20Case.png" style="z-index: 100;" alt="" />
+                            </div>
+                        </div>
                       </div>
                   </div>
 

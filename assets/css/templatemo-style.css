@@ -310,6 +310,8 @@ html {
 
 /* Section */
 
+
+
 .section {
     color: #fff;
     width: 55%;
@@ -873,6 +875,8 @@ section.contact-me {
     }
 
 }
+
+
 
 @media screen and (max-width: 1680px) and (min-width: 846px) { 
     .menu .social-network ul li a {
