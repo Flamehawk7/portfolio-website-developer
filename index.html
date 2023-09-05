@@ -145,8 +145,8 @@
                                       to infect the general population and create a new pandemic.
                                       They will spread it via pandas.
                                   </p>
-                                  <div class="white-button">
-                                      <a href="https://devbros.itch.io/pando20-case" style="z-index: 100;">Explore</a>
+                                  <div class="white-button" style="">
+                                      <a id="exploreRightImageButton" href="https://devbros.itch.io/pando20-case" style="z-index: 100;">Explore</a>
                                   </div>
                               </div>
                               <script>
@@ -154,10 +154,14 @@
                                     if (x.matches) { // If media query matches
                                         document.getElementById("right-image-pando").style.display = null;
                                         document.getElementById("left-image-pando").style.display = "none";
+                                        // document.getElementById("exploreRightImageButton").style.right = "0";
+                                        // document.getElementById("exploreRightImageButton").style.position = "absolute";
                                     } 
                                     else {
                                         document.getElementById("right-image-pando").style.display = "none";
                                         document.getElementById("left-image-pando").style.display = null
+                                        // document.getElementById("exploreRightImageButton").style.right = null;
+                                        // document.getElementById("exploreRightImageButton").style.position = null;
                                     }
                                     }
                                     var x = window.matchMedia("(min-width: 768px)")
