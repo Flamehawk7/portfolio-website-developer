@@ -25,9 +25,8 @@
     <link rel="stylesheet" href="assets/css/lightbox.css" />
     
 </head>
-
-  <body onload="leftRightImageSwapInit(); changeLang('en')">
-    
+  <!-- <body onload="leftRightImageSwapInit(); changeLang('en')"> <--TODO -->
+    <body onload="leftRightImageSwapInit();"></body>
     <script>
         function leftRightImageSwap(x) {
             if (x.matches) { // If media query matches
@@ -60,7 +59,7 @@
         // extract Language (en-US => en)
         userLang = userLang.substring(0, 2);
         // Call the function to set language
-        changeLang(userLang);
+        // changeLang(userLang); <-- TODO
         const loc = window.location.href;
         // function to change language
         function changeLang(lang) {
@@ -108,7 +107,7 @@
               <div id="menu" class="menu">
                   <i class="fa fa-times" id="menu-close"></i>
                   <div class="container">
-                    <!-- <div style="text-align: left;">
+                    <!-- <div style="text-align: left;"> <--TODO
                         <button onclick="changeLang('en')">EN</button><button onclick="changeLang('gr')">GR</button>
                     </div> -->
                       <div class="image">
@@ -122,25 +121,25 @@
                       <nav class="main-nav" role="navigation">
                           <ul class="main-menu">
                               <li><a lang="en" class="en" href="#section1">About Me</a></li>
-                              <li><a lang="gr" class="gr" href="#section1">Σχετικά με εμένα</a></li>
+                              <!-- <li><a lang="gr" class="gr" href="#section1">Σχετικά με εμένα</a></li> -->
                               <li><a lang="en" class="en" href="#section2">Education</a></li>
-                              <li><a lang="gr" class="gr" href="#section2">Εκπαίδευση</a></li>
+                              <!-- <li><a lang="gr" class="gr" href="#section2">Εκπαίδευση</a></li> -->
                               <li><a lang="en" class="en" href="#section3">Work Experience</a></li>
-                              <li><a lang="gr" class="gr" href="#section3">Προϋπηρεσία</a></li>
+                              <!-- <li><a lang="gr" class="gr" href="#section3">Προϋπηρεσία</a></li> -->
                               <li><a lang="en" class="en" href="#section4">Skills</a></li>
-                              <li><a lang="gr" class="gr" href="#section4">Δεξιότητες</a></li>
+                              <!-- <li><a lang="gr" class="gr" href="#section4">Δεξιότητες</a></li> -->
                               <li><a lang="en" class="en" href="#section5">Interests</a></li>
-                              <li><a lang="gr" class="gr" href="#section5">Ενδιαφέροντα</a></li>
+                              <!-- <li><a lang="gr" class="gr" href="#section5">Ενδιαφέροντα</a></li> -->
                               <li><a lang="en" class="en" href="#section6">Contact Me</a></li>
-                              <li><a lang="gr" class="gr" href="#section6">Επικοινωνήστε μαζί μου</a></li>
+                              <!-- <li><a lang="gr" class="gr" href="#section6">Επικοινωνήστε μαζί μου</a></li> -->
                               <li class="subnav">
                                 <a class="subnav-text en" id="sub-text" lang="en"> Games <i class="fa fa-caret-down"></i></a>
-                                <a class="subnav-text gr" id="sub-text" lang="gr"> Παιχνίδια <i class="fa fa-caret-down"></i></a>
+                                <!-- <a class="subnav-text gr" id="sub-text" lang="gr"> Παιχνίδια <i class="fa fa-caret-down"></i></a> -->
                                 <div class="subnav-content">
                                   <a id="sub" href="Hangman.html" lang="en" class="en">Hangman</a> <!-- onclick="window.location.href('Hangman.html')" -->
-                                  <a id="sub" href="Hangman.html" lang="gr" class="gr">Κρεμάλα</a> <!-- onclick="window.location.href('Hangman.html')" -->
+                                  <!--<a id="sub" href="Hangman.html" lang="gr" class="gr">Κρεμάλα</a> --> <!-- onclick="window.location.href('Hangman.html')" -->
                                   <a id="sub" href="Match3.html" lang="en" class="en">Match3</a>
-                                  <a id="sub" href="Match3.html" lang="gr" class="gr">Ταίριαξε 3</a>
+                                  <!--<a id="sub" href="Match3.html" lang="gr" class="gr">Ταίριαξε 3</a> -->
                                 </div>
                               </li>
                           </ul>
