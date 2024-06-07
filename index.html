@@ -187,31 +187,29 @@
                       <h4>Some of my projects</h4>
                   </div>
                   <div class="left-image-post">
-                      <div class="row">
-                          <div class="col-md-6">
-                              <div class="left-image">
-                                  <img src="assets/images/AlmopiasProject.png " style="z-index: 100;" alt="" />
-                              </div>
-                          </div>
-                          <div class="col-md-6">
-                              <div class="right-text">
-                                  <h4>Almopia's Project</h4>
-                                  <p>
-                                      The world is in the verge of extinction. An archeologist
-                                      is trying to prevent the as it seems inevitable.
-                                  </p>
-                                  <div class="white-button">
-                                      <a href="https://devbros.itch.io/devbros-demo-v2">Explore</a>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="left-image">
+                                <img src="assets/images/AlmopiasProject.png" style="z-index: 100;" alt="" class="project-image" />
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="right-text">
+                                <h4>Almopia's Project</h4>
+                                <p>The world is on the verge of extinction. An archeologist is trying to prevent the as it seems inevitable.</p>
+                                <div class="white-button">
+                                    <a href="https://devbros.itch.io/devbros-demo-v2">Explore</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
                   </div>
                   <div class="right-image-post">
                       <div class="row">
                         <div class="col-md-6" id="left-image-pando" style="display: none;">
                             <div class="right-image">
-                                <img src="assets/images/Pando20Case.png" style="z-index: 100;" alt="" />
+                                <img src="assets/images/Pando20Case.png" style="z-index: 100;" alt="" class="project-image" />
                             </div>
                         </div>
                           <div class="col-md-6" style="margin-top: 30px;">
@@ -234,7 +232,7 @@
                           </div>
                           <div class="col-md-6" id="right-image-pando" style="display: none;">
                             <div class="right-image">
-                                <img src="assets/images/Pando20Case.png" style="z-index: 100;" alt="" />
+                                <img src="assets/images/Pando20Case.png" style="z-index: 100;" alt="" class="project-image" />
                             </div>
                         </div>
                       </div>
@@ -244,7 +242,7 @@
                       <div class="row">
                           <div class="col-md-6">
                               <div class="left-image">
-                                  <img src="assets/images/DiabloArena.png" style="z-index: 100;" alt="" />
+                                  <img src="assets/images/DiabloArena.png" style="z-index: 100;" alt="" class="project-image" />
                               </div>
                           </div>
                           <div class="col-md-6">
@@ -916,6 +914,11 @@
                   </div>
               </div>
           </section>
+          <!-- Modal Structure -->
+          <div id="imageModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="imgModal">
+        </div>
       </div>
 
     <!-- Scripts -->
@@ -1007,6 +1010,23 @@
     sticky_relocate_right();
     });
     //end sticky button
+
+    document.addEventListener('DOMContentLoaded', (event) => {
+        var modal = document.getElementById("imageModal");
+        var modalImg = document.getElementById("imgModal");
+
+        var images = document.getElementsByClassName('project-image');
+        for (var i = 0; i < images.length; i++) {
+            images[i].onclick = function(){
+                modal.style.display = "block";
+                modalImg.src = this.src;
+            }
+        }
+        var span = document.getElementsByClassName("close")[0];
+        span.onclick = function() { 
+            modal.style.display = "none";
+        }
+    });
     </script>
   </body>
 </html>
