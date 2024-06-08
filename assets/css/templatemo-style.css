@@ -617,6 +617,10 @@ button:hover {
     background-image: url(../images/cpp-icon.png);
 }
 
+.service-item .unity3d-icon {
+    background-image: url(../images/unity-icon_.png);
+}
+
 .service-item .unity-icon {
     background-image: url(../images/unity-icon.png);
 }
