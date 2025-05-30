@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="referrer" content="origin" />
+    <meta charset="utf-8" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+          rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Nick Bitounis Game Title: Crossword</title>
+    <!-- 
+    Reflux Template
+    https://templatemo.com/tm-531-reflux
+    -->
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css" />
+    <link rel="stylesheet" href="assets/css/templatemo-style.css" />
+    <link rel="stylesheet" href="assets/css/owl.css" />
+    <link rel="stylesheet" href="assets/css/lightbox.css" />
+    <script src="./iframeResizer.min.js"></script>
+</head>
+
+  <body>
+   
+      <div id="page-wraper">
+            <!-- <div class="sticky right"></div>
+            <div id="container" style="z-index: 500; position: relative;">
+                <div id="sticky-anchor"></div>
+                <div class="sticky right"><button class = "button-float-right" onclick="window.location.href='Hangman.html'"> Games </button></div>
+            </div> -->
+          <!-- Sidebar Menu -->
+          <div class="responsive-nav">
+              <i class="fa fa-bars" id="menu-toggle"></i>
+              <div id="menu" class="menu">
+                  <i class="fa fa-times" id="menu-close"></i>
+                  <div class="container">
+                      <div class="image">
+                          <a href="#"><img src="assets/images/author-image.jpg" alt="" /></a>
+                      </div>
+                      <div class="author-content">
+                          <h4 style="font-size: 30px;">Nick Bitounis</h4>
+                          <span style="font-size: 20px;">Software Engineer - Unity Developer</span>
+                      </div>
+                      <nav class="main-nav" role="navigation">
+                          <ul class="main-menu">
+                              <li><a id="sub" href="index.html">Portfolio</a></li>
+                              <li class="subnav">
+                                <a class="subnav-text" id="sub-text"> Games <i class="fa fa-caret-down"></i></a>
+                                <div class="subnav-content">
+                                  <a id="sub" href="Hangman.html">Hangman</a>
+                                  <a id="sub" href="Match3.html">Match3</a>
+                                  <a id="sub" href="Crossword.html">Crossword</a>
+                                </div>
+                              </li>
+                          </ul>
+                      </nav>
+                      <div class="social-network">
+                          <ul class="soial-icons">
+                              <li>
+                                  <a href="https://www.facebook.com/nikos.mpitounis/">
+                                      <i class="fa fa-facebook"></i>
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="https://www.linkedin.com/in/nickbit/"><i class="fa fa-linkedin"></i></a>
+                              </li>
+                              <li>
+                                  <a href="https://www.instagram.com/nick_bitounis/"><i class="fa fa-instagram"></i></a>
+                              </li>
+                              <li>
+                                  <a href="https://www.youtube.com/@devbrosgames9975"><i class="fa fa-youtube"></i></a>
+                              </li>
+                              <li>
+                                  <a href="https://devbros.itch.io/"><i class="fa fa-itch-io"></i></a>
+                              </li>
+                              <li>
+                                  <a href="https://play.google.com/store/apps/developer?id=DevBros+Games"><i class="fa fa-google-play"></i></a>
+                              </li>
+                          </ul>
+                      </div>
+                      <div class="copyright-text">
+                          <p>Copyright 2023 <a href="http://nickbitounis.gr">Nick Bitounis</a></p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <section class="section about-me" data-section="section1">
+              <div class="container">
+                  <div class="section-heading">
+                  </div>
+                  <div id="content">
+                    <p>
+                        <iframe id="frame" src="assets/Games/Crossword/index.html"  scrolling="no" height="auto" allowTransparency="true"></iframe>
+                    </p>
+                  </div>
+              </div>
+          </section>
+      </div>
+      <script>
+        iFrameResize({log: true}, '#frame')
+        function resizeIframe(obj){
+            obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+        }
+        var iframe = document.getElementById("#frame");
+        iframe.width = iframe.contentWindow.document.body.scrollWidth;
+        iframe.height = iframe.contentWindow.document.body.scrollHeight;
+
+        
+      </script>
+    <!-- Scripts -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+      //according to loftblog tut
+      $(".main-menu li:first").addClass("active");
+
+      var showSection = function showSection(section, isAnimate) {
+        var direction = section.replace(/#/, ""),
+          reqSection = $(".section").filter(
+            '[data-section="' + direction + '"]'
+          ),
+          reqSectionPos = reqSection.offset().top - 0;
+
+        if (isAnimate) {
+          $("body, html").animate(
+            {
+              scrollTop: reqSectionPos
+            },
+            800
+          );
+        } else {
+          $("body, html").scrollTop(reqSectionPos);
+        }
+      };
+
+      var checkSection = function checkSection() {
+        $(".section").each(function() {
+          var $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+          if (topEdge < wScroll && bottomEdge > wScroll) {
+            var currentId = $this.data("section"),
+              reqLink = $("a").filter("[href*=\\#" + currentId + "]");
+            reqLink
+              .closest("li")
+              .addClass("active")
+              .siblings()
+              .removeClass("active");
+          }
+        });
+      };
+
+      $(".main-menu").on("click", "a", function(e) {
+        if($(this).attr('id') != "sub"){
+            e.preventDefault();
+            showSection($(this).attr("href"), true);
+        }
+      });
+
+      $(window).scroll(function() {
+        checkSection();
+      });
+
+    function sticky_relocate_left() {
+        var window_top = $(window).scrollTop();
+        var div_top = $('#sticky-anchor').offset().top;
+        if (window_top > div_top) {
+            $('.left').addClass('mobile-sticky');
+        } else {
+            $('.left').removeClass('mobile-sticky');
+        }
+    }
+
+    function sticky_relocate_right() {
+        var window_top2 = $(window).scrollTop();
+        var div_top2 = $('#sticky-anchor').offset().top;
+        if (window_top2 > div_top2) {
+            $('.right').addClass('mobile-sticky');
+        } else {
+            $('.right').removeClass('mobile-sticky');
+        }
+    }
+
+    $(function () {
+    //$(window).addEventListener("touchmove", sticky_relocate_right, false);
+    setTimeout($(window).scroll(sticky_relocate_left),0);
+    $(window).scroll(sticky_relocate_right);
+    sticky_relocate_left();
+    sticky_relocate_right();
+    });
+    //end sticky button
+    </script>
+  </body>
+</html>
