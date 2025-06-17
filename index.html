@@ -172,8 +172,8 @@
                           </ul>
                       </div>
                       <div class="copyright-text">
-                          <p>Copyright 2023 <a href="http://nickbitounis.gr">Nick Bitounis</a></p>
-                      </div>
+                        <p>Copyright <span id="year"></span> <a href="http://nickbitounis.gr">Nick Bitounis</a></p>
+                    </div>
                   </div>
               </div>
           </div>
@@ -272,6 +272,13 @@
               <div class="container">
                   <div class="section-heading">
                       <h2>Education</h2>
+                        <div class="row justify-content-center">
+                            <div class="col-md-6 d-flex justify-content-center">
+                                <div class="center-image" style="width: 40%;">
+                                    <img src="assets/images/Graduation.jpg" alt="Graduation" class="project-image" />
+                                </div>
+                            </div>
+                        </div>
                       <div class="line-dec"></div>
                       <span style="font-size: 20px;">
                           Bachelor degree in informatics at Athens University of Economics & Business majoring in Business Research and IT Economics & Computer Systems and Networks
@@ -601,11 +608,51 @@
                                         </script>
                                       </div>
                                   </div>
-                                  <div class="position-job">
-                                      <p style="padding-top: 20px;">
-                                        UWP Project (Universal Windows Platform) & personal Website
-                                      </p>
-                                  </div>
+                                  <hr color="gray">
+                                    <div class="position-job">
+                                        <h6 class="project-time" style="font-size: 15px;">
+                                            2019/01/01
+                                        </h6>
+                                        <h5 style="padding-top: 20px; font-weight: bold;">
+                                            MSP Presentation
+                                        </h5>
+                                        <p class="list-item">
+                                            Organized and delivered a workshop titled "How to Build Your Own Website Using Azure Portal" at Athens University of Economics and Business (ΟΠΑ)
+                                        </p>
+                                        <p class="list-item">
+                                            Presented in front of a large audience in the university auditorium
+                                        </p>
+                                        <p class="list-item">
+                                            Guided students on using Azure services to create and host websites
+                                        </p>    
+                                        <p class="list-item">
+                                            Promoted cloud technology adoption and supported the university’s tech community
+                                        </p>    
+                                        <div class="row justify-content-center">
+                                        <div class="col-md-6 d-flex justify-content-center">
+                                            <div class="center-image" style="width: 75%;">
+                                            <img src="assets/images/AUEB_Presentation.jpg" alt="Graduation" class="project-image" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 d-flex justify-content-center">
+                                            <div class="center-image" style="width: 75%;">
+                                            <img src="assets/images/AUEB_Presentation_2.jpg" alt="Second Image" class="project-image" />
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                  <hr color="gray">
+                                    <div class="position-job">
+                                        <h6 class="project-time" style="font-size: 15px;">
+                                            2018/01/01
+                                        </h6>
+                                        <h5 style="padding-top: 20px; font-weight: bold;">
+                                            MSP Entrance
+                                        </h5>
+                                        <p class="list-item">
+                                            UWP Project (Universal Windows Platform) & personal Website
+                                        </p>
+                                    </div>
                               </div>
                             </section>
                         </div>
@@ -641,6 +688,18 @@
                                     &nbsp;
                                     <h4 class="" style="padding-top: 20px; font-weight:normal;">Projects</h4>
                                     &nbsp;
+                                    <hr color="gray">
+                                    <div class="position-job" style="padding-top: 20px;">
+                                        <h6 class="project-time" style="font-size: 15px;">
+                                            2019/05/01
+                                        </h6>
+                                        <h5 style="font-weight: bold;">
+                                            Delivered Presentation on Game Development to 1st-Year Students at Arsakeion Private School
+                                        </h5>
+                                        <h6>
+                                            C#, Blender3D, Unity3D
+                                        </h6>
+                                    </div>
                                     <div class="position-job" style="padding-top: 20px;">
                                         <h6 class="project-time" style="font-size: 15px;">
                                             2019/03/01
@@ -681,6 +740,37 @@
                                         <h6>
                                             C#, Blender3D, Unity3D
                                         </h6>
+                                    </div>
+                                    <hr color="gray">
+                                    <div class="position-job" style="padding-top: 20px;">
+                                        <h6 class="project-time" style="font-size: 15px;">
+                                            2018/10/01 - 2019/02/01
+                                        </h6>
+                                        <h5 style="font-weight: bold;">
+                                            Voluntary participation in an educational program in Computer Science (Game Development)
+                                        </h5>
+                                        <p class="list-item">
+                                            School: Public Gymnasium in Ilion — participation in a European educational technology competition
+                                        </p>
+                                        <p class="list-item">
+                                            Role: Educational guidance and technical support for student teams in game development using Unity
+                                        </p>
+                                        <p class="list-item">
+                                            Subject: Basic principles of game design, C# scripting, environment creation, debugging
+                                        </p>
+                                        <p class="list-item">
+                                            Outcome: Submission of a game to the competition – active student involvement in the development process
+                                        </p>
+                                        <h6>
+                                            C#, Blender3D, Unity3D
+                                        </h6>
+                                            <div class="row justify-content-center">
+                                                <div class="col-md-6 d-flex justify-content-center">
+                                                    <div class="center-image" style="width: 75%;">
+                                                        <img src="assets/images/schoolIlion.jpg" alt="Graduation" class="project-image" />
+                                                    </div>
+                                                </div>
+                                            </div>
                                     </div>
                                     <hr color="gray">
                                     <div class="position-job" style="padding-top: 20px;">
@@ -1134,6 +1224,9 @@
             modal.style.display = "none";
         }
     });
+    </script>
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
     </script>
   </body>
 </html>

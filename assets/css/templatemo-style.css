@@ -875,6 +875,25 @@ section.contact-me {
     text-align: center;
 }
 
+.center-image {
+    overflow: hidden;
+    width: auto;
+    max-width: 200px; /* adjust as needed */
+}
+
+.center-image img {
+    transition: transform 0.3s ease;
+    display: block;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+.center-image:hover img {
+    transform: scale(1.1);
+}
+
+
 /* Hover effect */
 .left-image {
     overflow: hidden;
