@@ -36,10 +36,15 @@
             if (x.matches) { // If media query matches
                 document.getElementById("right-image-pando").style.display = null;
                 document.getElementById("left-image-pando").style.display = "none";
+                document.getElementById("right-image-Battleship").style.display = null;
+                document.getElementById("left-image-Battleship").style.display = "none";
+
             } 
             else {
                 document.getElementById("right-image-pando").style.display = "none";
                 document.getElementById("left-image-pando").style.display = null
+                document.getElementById("right-image-Battleship").style.display = "none";
+                document.getElementById("left-image-Battleship").style.display = null;
             }
             }
             var x = window.matchMedia("(min-width: 768px)")
@@ -221,6 +226,54 @@
                                   </p>
                                   <div class="white-button">
                                       <a href="https://devbros.itch.io/diablo-arena-v-aueb">Εξερευνησε</a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="right-image-post">
+                      <div class="row">
+                        <div class="col-md-6" id="left-image-Battleship" style="display: none;">
+                            <div class="right-image">
+                                <img src="../assets/images/BattleShipGame.png" style="z-index: 100;" alt="" class="project-image" />
+                            </div>
+                        </div>
+                          <div class="col-md-6" style="margin-top: 30px;">
+                              <div class="left-text">
+                                  <h4>Battleship Multiplayer Game (Cross-platform)</h4>
+                                  <p>
+                                      Παιχνίδι Ναυμαχίας που επιτρέπει multiplayer παιχνίδι με φίλους σε Android και Windows PC, καθώς υποστηρίζει πολλαπλές πλατφόρμες (cross-platform).
+                                  </p>
+                                  <div class="white-button">
+                                      <a id="exploreRightImageButton" href="https://devbros.itch.io/battleship-multiplayer" style="z-index: 100;">Εξερευνησε</a>
+                                  </div>
+                              </div>
+                              
+                          </div>
+                          <div class="col-md-6" id="right-image-Battleship" style="display: none;">
+                            <div class="right-image">
+                                <img src="../assets/images/BattleShipGame.png" style="z-index: 100;" alt="" class="project-image" />
+                            </div>
+                        </div>
+                      </div>
+                  </div>
+
+                  <div class="left-image-post-not-first">
+                      <div class="row">
+                          <div class="col-md-6">
+                              <div class="left-image">
+                                  <img src="../assets/images/YugiohArchive.png" style="z-index: 100;" alt="" class="project-image" />
+                              </div>
+                          </div>
+                          <div class="col-md-6">
+                              <div class="right-text">
+                                  <h4>Yugioh Archive Project</h4>
+                                  <p>
+                                      Πρόκειται για ένα project αρχειοθέτησης Yugioh, που σας επιτρέπει να δημιουργείτε λίστες, τράπουλες και ό,τι άλλο θέλετε να οργανώσετε και να αποθηκεύσετε.
+                                  </p>
+                                  <div class="white-button">
+                                      <a href="https://devbros.itch.io/yugioh-archive">Εξερευνησε</a>
                                   </div>
                               </div>
                           </div>
@@ -490,6 +543,36 @@
                                     </div>
                                     &nbsp;
                                     <h4 class="" style="padding-top: 20px; font-weight:normal;">Έργα</h4>
+                                    <div class="position-job" style="padding-top: 20px;">
+                                        <h6 class="project-time" style="font-size: 15px;">
+                                            2025/02/01
+                                        </h6>
+                                        <h5 style="font-weight: bold;">
+                                            Yugioh Archive Project
+                                        </h5>
+                                        <p class="list-item">
+                                            Ανάπτυξη desktop εφαρμογής με την ονομασία Yugioh Archive, με χρήση Unity3D
+                                        </p>
+                                        <h6>
+                                            C#, Blender3D, Unity3D
+                                        </h6>
+                                    </div>
+                                    <hr color="gray">
+                                    <div class="position-job" style="padding-top: 20px;">
+                                        <h6 class="project-time" style="font-size: 15px;">
+                                            2024/02/01
+                                        </h6>
+                                        <h5 style="font-weight: bold;">
+                                            Battleship Multiplayer Game (Cross-platform)
+                                        </h5>
+                                        <p class="list-item">
+                                            Κατασκευή cross-platform παιχνιδιού Ναυμαχίας (PC & Android) με Unity3D
+                                        </p>
+                                        <h6>
+                                            C#, Blender3D, Unity3D
+                                        </h6>
+                                    </div>
+                                    <hr color="gray">
                                     <div class="position-job" style="padding-top: 20px;">
                                         <h6 class="project-time" style="font-size: 15px;">
                                             2020/07/01
