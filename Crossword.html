@@ -29,12 +29,6 @@
   <body>
    
       <div id="page-wraper">
-            <!-- <div class="sticky right"></div>
-            <div id="container" style="z-index: 500; position: relative;">
-                <div id="sticky-anchor"></div>
-                <div class="sticky right"><button class = "button-float-right" onclick="window.location.href='Hangman.html'"> Games </button></div>
-            </div> -->
-          <!-- Sidebar Menu -->
           <div class="responsive-nav">
               <i class="fa fa-bars" id="menu-toggle"></i>
               <div id="menu" class="menu">
@@ -46,7 +40,21 @@
                       <div class="author-content">
                           <h4 style="font-size: 30px;">Nick Bitounis</h4>
                           <span style="font-size: 20px;">Software Engineer - Unity Developer</span>
-                      </div>
+                          <div style="margin-top: 20px;">
+                            <ul style="list-style: none; display: flex; gap: 10px; padding-left: 0; justify-content: center;">
+                            <li>
+                                <a href="Crossword.html" title="English">
+                                <img src="https://hatscripts.github.io/circle-flags/flags/gb.svg" width="24" height="24"  alt="English" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/el/Crossword.html" title="Ελληνικά">
+                                <img src="https://hatscripts.github.io/circle-flags/flags/gr.svg" width="24" height="24"  alt="Ελληνικά" />
+                                </a>
+                            </li>
+                            </ul>
+                          </div>
+                        </div>
                       <nav class="main-nav" role="navigation">
                           <ul class="main-menu">
                               <li><a id="sub" href="index.html">Portfolio</a></li>
@@ -85,8 +93,8 @@
                           </ul>
                       </div>
                       <div class="copyright-text">
-                          <p>Copyright 2023 <a href="http://nickbitounis.gr">Nick Bitounis</a></p>
-                      </div>
+                        <p>Copyright <span id="year"></span> <a href="http://nickbitounis.gr">Nick Bitounis</a></p>
+                    </div>
                   </div>
               </div>
           </div>
@@ -196,13 +204,14 @@
     }
 
     $(function () {
-    //$(window).addEventListener("touchmove", sticky_relocate_right, false);
     setTimeout($(window).scroll(sticky_relocate_left),0);
     $(window).scroll(sticky_relocate_right);
     sticky_relocate_left();
     sticky_relocate_right();
     });
-    //end sticky button
+    </script>
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
     </script>
   </body>
 </html>

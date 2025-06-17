@@ -39,6 +39,20 @@
                       <div class="author-content">
                           <h4 style="font-size: 30px;">Nick Bitounis</h4>
                           <span style="font-size: 20px;">Software Engineer - Unity Developer</span>
+                          <div style="margin-top: 20px;">
+                            <ul style="list-style: none; display: flex; gap: 10px; padding-left: 0; justify-content: center;">
+                            <li>
+                                <a href="Match3.html" title="English">
+                                <img src="https://hatscripts.github.io/circle-flags/flags/gb.svg" width="24" height="24"  alt="English" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="el/Match3.html" title="Ελληνικά">
+                                <img src="https://hatscripts.github.io/circle-flags/flags/gr.svg" width="24" height="24"  alt="Ελληνικά" />
+                                </a>
+                            </li>
+                            </ul>
+                          </div>
                       </div>
                       <nav class="main-nav" role="navigation">
                           <ul class="main-menu">
@@ -78,8 +92,8 @@
                           </ul>
                       </div>
                       <div class="copyright-text">
-                          <p>Copyright 2023 <a href="http://nickbitounis.gr">Nick Bitounis</a></p>
-                      </div>
+                        <p>Copyright <span id="year"></span> <a href="http://nickbitounis.gr">Nick Bitounis</a></p>
+                    </div>
                   </div>
               </div>
           </div>
@@ -196,6 +210,9 @@
     sticky_relocate_right();
     });
     //end sticky button
+    </script>
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
     </script>
   </body>
 </html>
