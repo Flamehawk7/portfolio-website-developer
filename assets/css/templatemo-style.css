@@ -633,6 +633,13 @@ button:hover {
     background-image: url(../images/udemy.png);
 }
 
+.service-item .cert_3-icon{
+    background-image: url(../images/AnthropicAi.png);
+    background-size: contain;
+    background-position: center;
+    width: 140px;
+}
+
 .service-item .business-innovation-icon {
     background-image: url(../images/business-innovation-icon.png);
 }
