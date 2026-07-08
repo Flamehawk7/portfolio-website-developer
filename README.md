@@ -22,7 +22,7 @@
 # <ins>AnthropicAI Certificates</ins>
 
 # Claude 101
-[(Claude 101)](https://anthropic.skilljar.com/claude-101)
+[(Claude 101 Course)](https://anthropic.skilljar.com/claude-101)
 
 # Cert #
-[(Claude 101)](https://verify.skilljar.com/c/rxyk3dh5pf9q)
+[(Claude 101 Cert)](https://verify.skilljar.com/c/rxyk3dh5pf9q)
