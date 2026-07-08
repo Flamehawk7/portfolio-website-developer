@@ -19,3 +19,10 @@
 # Cert #
 [Unit Testing for C# Developers](https://github.com/Flamehawk7/portfolio-website-developer/blob/main/assets/Certs/Unit%20Testing%20for%20C%23%20Developers.jpg)
 
+# <ins>AnthropicAI Certificates</ins>
+
+# Claude 101
+[(Claude 101)](https://anthropic.skilljar.com/claude-101)
+
+# Cert #
+[(Claude 101)](https://verify.skilljar.com/c/rxyk3dh5pf9q)
