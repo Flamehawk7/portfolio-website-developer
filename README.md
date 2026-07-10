@@ -26,3 +26,9 @@
 
 # Cert #
 [(Claude 101 Cert)](https://verify.skilljar.com/c/rxyk3dh5pf9q)
+
+# Claude Code 101
+[(Claude Code 101 Course)](https://anthropic.skilljar.com/claude-code-101)
+
+# Cert #
+[(Claude Code 101 Cert)](https://verify.skilljar.com/c/c2ib2g6xypcv)
