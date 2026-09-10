@@ -974,6 +974,47 @@ section.contact-me {
     cursor: pointer;
 }
 
+.responsibility-details {
+            margin-top: 12px;
+}
+
+.responsibility-details summary {
+    cursor: pointer;
+    font-weight: 700;
+    display: inline-block;
+    padding: 6px 0;
+    user-select: none;
+    transition: opacity 0.2s ease;
+}
+
+.responsibility-details summary:hover {
+    opacity: 0.75;
+}
+
+.responsibility-details summary::-webkit-details-marker {
+    display: none;
+}
+
+.responsibility-details summary::marker {
+    display: none;
+}
+
+.responsibility-details .hide-text {
+    display: none;
+}
+
+.responsibility-details[open] .view-text {
+    display: none;
+}
+
+.responsibility-details[open] .hide-text {
+    display: inline;
+}
+
+.responsibility-details-content {
+    margin-top: 15px;
+}
+
 @keyframes spin
 {
 from 
